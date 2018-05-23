@@ -4,4 +4,5 @@ SELECT UPPER(c.last_name) || ' ' || c.first_name "Client",
                             ELSE 'Périmé'
                         END), 'Aucun') "Abonnement"
 FROM t_customer c
-LEFT OUTER JOIN t_pass p ON c.pass_id = p.pass_id /
+LEFT OUTER JOIN t_pass p ON c.pass_id = p.pass_id 
+/

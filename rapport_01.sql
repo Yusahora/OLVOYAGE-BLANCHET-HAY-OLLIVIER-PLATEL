@@ -7,4 +7,5 @@ WHERE employee_id =
      HAVING COUNT(employee_id) =
        (SELECT MAX(COUNT(*))
         FROM t_reservation
-        GROUP BY employee_id)) /
+        GROUP BY employee_id)) 
+/
